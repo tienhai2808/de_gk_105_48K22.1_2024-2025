@@ -1,0 +1,10 @@
+{% extends 'index.html' %}
+{% block content %}
+  {% for message in messages %}
+    {{ message }} <br>
+  {% endfor %}
+  Tiêu đề: {{ baiviet.tieu_de }} <br>
+  Ngày tạo: {{ baiviet.ngay_tao }} <br>
+  Nội dung: {{ baiviet.noi_dung }} <br>
+  Người tạo: {{ baiviet.nguoi_tao }} <br>
+{% endblock %}

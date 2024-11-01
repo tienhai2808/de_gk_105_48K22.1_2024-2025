@@ -1,0 +1,9 @@
+{% extends 'index.html' %}
+{% block content %}
+  <h1>{{ title }}</h1>
+  {% for baiviet in baiviets %}
+    Tiêu đề: {{ baiviet.tieu_de }} <br>
+    Thứ tự: {{ baiviet.thu_tu }} <br>
+    <a href="/xembaiviet/{{ baiviet.bai_viet.id }}/">Xem chi tiết</a> <br>
+  {% endfor %}
+{% endblock %}
